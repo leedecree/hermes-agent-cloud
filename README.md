@@ -2,6 +2,8 @@
 
 یک نسخه سبک و کانتینری از **Hermes Agent** طراحی شده برای اجرا روی سرویس‌های ابری رایگان مانند **Render** و **Koyeb** متصل به تلگرام با Keep-Alive ضدخواب.
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/leedecree/hermes-agent-cloud)
+
 ---
 
 ## ⚡ امکانات
@@ -14,26 +16,18 @@
 
 ---
 
-## 🛠️ راهنمای دیپلوی سریع روی Render (۵ دقیقه)
+## 🛠️ راهنمای دیپلوی سریع روی Render (با ۱ کلیک)
 
-### مرحله ۱: ثبت نام در Render
-1. به سایت [render.com](https://render.com) بروید.
-2. با اکانت گیت‌هاب لاگین کنید (نیاز به کارت بانکی ندارد).
-
-### مرحله ۲: ایجاد سرویس
-1. روی دکمه **New +** کلیک کرده و گزینه **Web Service** را انتخاب کنید.
-2. گزینه **Build and deploy from a Git repository** را انتخاب کرده و ریپازیتوری `hermes-agent-cloud` را انتخاب کنید.
-3. مشخصات زیر را تنظیم کنید:
-   - **Name:** `hermes-telegram-agent`
-   - **Language:** `Docker`
-   - **Instance Type:** `Free`
-4. در بخش **Environment Variables**، مقادیر زیر را وارد کنید:
-   - `TELEGRAM_BOT_TOKEN`: توکن بات تلگرام شما
-   - `TELEGRAM_ALLOWED_USERS`: آیدی عددی تلگرام شما (`6171669998`)
+1. روی دکمه آبی بالای صفحه (**Deploy to Render**) کلیک کنید یا وارد لینک زیر شوید:  
+   👉 **[دیپلوی مستقیم در Render](https://render.com/deploy?repo=https://github.com/leedecree/hermes-agent-cloud)**
+2. با اکانت گیت‌هاب وارد شوید (نیازی به کارت بانکی نیست).
+3. مقادیر متغیرها را پر کنید:
+   - `TELEGRAM_BOT_TOKEN`: توکن بات تلگرام (`8985367067:AAEd0O9vblcaPgOOCnIDQ0zKtUzLev_5yJI`)
+   - `TELEGRAM_ALLOWED_USERS`: آیدی عددی شما (`6171669998`)
    - `GEMINI_API_KEY`: کلید رایگان جمینای از [Google AI Studio](https://aistudio.google.com/)
    - `MODEL_PROVIDER`: `gemini`
    - `MODEL_NAME`: `gemini-2.5-flash`
-5. دکمه **Create Web Service** را بزنید تا بیلد آغاز شود.
+4. روی **Apply** کلیک کنید تا کانتینر ظرف ۳ دقیقه بالا بیاید.
 
 ---
 
